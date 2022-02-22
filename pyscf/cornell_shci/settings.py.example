@@ -1,6 +1,6 @@
 import os
 
-SHCIEXE = '/path/to/shci'
-SHCIRUNTIMEDIR = '/path/to/scratch'
+SHCIEXE = '/home/slee89/opt/shci/shci'
+SHCIRUNTIMEDIR = './'
 MPIPREFIX = '' #'mpirun -np 2'  # change to srun for SLURM job system
 

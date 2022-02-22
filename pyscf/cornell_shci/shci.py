@@ -253,12 +253,13 @@ class SHCI(lib.StreamObject):
             wfn_file = get_wfn_file(self, state_id)
             if os.path.isfile(wfn_file):
                 shutil.move(wfn_file, get_wfn_file(self, state_id * 2))
-        else:
-            self.cleanup(remove_wf=True)
+        #else:
+        #    self.cleanup(remove_wf=True)
 
         if 'orbsym' in kwargs:
             self.orbsym = kwargs['orbsym']
-        writeIntegralFile(self, h1e, eri, norb, nelec, ecore)
+        #writeIntegralFile(self, h1e, eri, norb, nelec, ecore)
+
         conf = {}
         if 'tol' in kwargs:
             conf['tol'] = kwargs['tol']
